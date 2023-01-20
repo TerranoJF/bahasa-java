@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cetakAngka(a) {
+            if (a === 0) {
+                return ;
+            }
+            document.writeln('nomor ' + a );
+            document.write('<br>');
+            console.log(a);
+            cetakAngka(a-1);
+        }
+
+        a = prompt('masukkan nilai yang ingin di ulang : ');
+        a = parseInt(a);
+        cetakAngka(a);
+    </script>
+</body>
+</html>
